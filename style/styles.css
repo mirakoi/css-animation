@@ -5,33 +5,57 @@
 }
 
 body {
-  height: 100vh;
-  background-color: #cf85b3;
+  background-color: #a37c94;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Indie Flower", cursive;
 }
 
 h1 {
   font-family: "Indie Flower", cursive;
   font-size: 40px;
+  font-weight: 800;
   letter-spacing: 5px;
-  border-bottom: black 1px solid;
+  padding: 30px;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  border: dotted 2px rgb(255, 234, 254);
 }
 
-p {
-  font-family: "Indie Flower", cursive;
+h1:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(96, 70, 110);
+  color: white;
 }
 
 h2 {
-  font-family: "Indie Flower", cursive;
+  color: black;
+  margin-top: 40px;
+  font-size: 30px;
+  border-bottom: dotted 2px white;
 }
+
+h3 {
+  color: black;
+  padding-bottom: 20px;
+  padding: 50px 0 30px 0;
+}
+
+img {
+    border-radius: 20px;
+  }
+  
+/* CARD SECTION */
 
 .container {
   display: flex;
   justify-content: center;
   padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .card {
@@ -40,15 +64,23 @@ h2 {
   height: 450px;
   margin: 10px;
   border-radius: 5px;
-  
+  box-shadow: 5px 5px 20px black;
+  transition: width 6s, height 6s, transform 2s;
+  transition-delay: 0, 1s;
+}
+
+.card:hover {
+  width: 270px;
+  height: 450px;
+  transform: rotate(360deg);
 }
 
 .card-text {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  padding:20px;
+  padding: 20px;
 }
 
 .card-image {
@@ -71,37 +103,72 @@ h2 {
 .third-card {
   background-image: url(/images/heart-three.jpg);
 }
-/*
-body {
-  height: 100vh;
-  background-color: #cf85b3;
+
+/* DOTS SECTION */
+
+.dots-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 800px;
+  height: 150px;
+  padding: 50px 0 50px 0;
+}
+
+.div-dots {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  background-color: rgb(223, 187, 226);
+  animation-name: example;
+  animation-duration: 5s;
+  border-radius: 50%;
+  animation-iteration-count: 100;
+}
+
+@keyframes example {
+  0% {
+    background-color: rgb(180, 65, 90);
+  }
+  25% {
+    background-color: rgb(199, 88, 190);
+  }
+  50% {
+    background-color: rgb(204, 1, 177);
+  }
+  100% {
+    background-color: rgb(80, 15, 94);
+  }
+}
+
+/* INFO SECTION */
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  border-style: none;
+  width: 800px;
+  height: 500px;
+  padding-top: 40px;
 }
 
-* {
-  box-sizing: border-box;
+.main-text {
+  width: 200px;
+  height: 300px;
+  letter-spacing: 0, 5px;
+  animation-duration: 5s;
 }
 
-h1 {
-    font-size: 50px;
-    color: white;
+.main-info {
+  border: dotted 2px rgb(255, 233, 253);
+  padding: 30px;
 }
 
-/*
-.container {
-  display:flex;
-  width: 500px;
-  height: 400px;
-  margin: 40px;
-  background: linear-gradient(
-    to right,
-    #41354b 0%,
-    #41354b 50%,
-    rgb(232, 216, 236) 50%,
-    rgb(232, 216, 236) 100%
-  );
-}*/
+.h2-title {
+  animation-duration: 5s;
+}
+
+.heart-four {
+  animation-duration: 3s;
+}

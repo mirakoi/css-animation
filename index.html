@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,16 +15,23 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
+
+    <!-- <link red="stylesheet" href="animate.css"> -->
     <title>animation-project</title>
   </head>
   <body>
-    <h1>LOVE QOUTES</h1>
+    <div class="container-title">
+      <h1>LOVE QOUTES</h1>
+    </div>
     <section class="container">
       <div class="card">
         <div class="card-image first-card"></div>
         <div class="card-text">
           <h2>Amy Poehler</h2>
-          <p>"Continue to share your heart with people even if it has been broken."</p>
+          <p>
+            "Continue to share your heart with people even if it has been
+            broken."
+          </p>
         </div>
       </div>
 
@@ -36,9 +47,56 @@
         <div class="card-image third-card"></div>
         <div class="card-text">
           <h2>Elizabeth Gilbert</h2>
-          <p>"To be fully seen by somebody, then, and be loved anyhow - this is a human offering that can border on miraculous."</p>
+          <p>
+            "To be fully seen by somebody, then, and be loved anyhow - this is a
+            human offering that can border on miraculous."
+          </p>
         </div>
       </div>
     </section>
+
+    <!-- DOTS -->
+    <div class="dots-section">
+      <div class="div-dots"></div>
+      <div class="div-dots"></div>
+      <div class="div-dots"></div>
+      <div class="div-dots"></div>
+    </div>
+
+    <!-- INFO ABOUT LOVE QOUTES -->
+    <div>
+      <h2
+        class="h2-title animate__animated animate__heartBeat animate__delay-1s"
+      >
+        Quotes That Will Make Anyone Believe in True Love
+      </h2>
+    </div>
+    <div class="container-two">
+      <div class="image-section">
+        <img
+          src="/images/heart-four.jpg "
+          alt="heart"
+          height="400px"
+          width="300px"
+          border-radius="5px"
+          class="heart-four animate__animated animate__fadeInTopLeft animate__delay-1s"
+          ;
+        />
+      </div>
+      <div class="main-info">
+        <p
+          class="main-text animate__animated animate__fadeInDown animate__delay-1s"
+        >
+          <span style="color: black; font-weight: bold; font-size: 22px"
+            >Something</span
+          >
+          as power as love is hard to put into words, but oftentimes, especially
+          around Valentine's Day it's necessary to figure out how to say what
+          you really mean to your significant other. Whether you want to write
+          something simple and sweet or are in need of a more creative way to
+          say, "I Love You," these quotes about love will do just the trick.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
