@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #cf85b3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  letter-spacing: 5px;
+  border-bottom: black 1px solid;
+}
+
+p {
+  font-family: "Indie Flower", cursive;
+}
+
+h2 {
+  font-family: "Indie Flower", cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.card {
+  background-color: rgb(223, 197, 223);
+  width: 270px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 5px;
+  
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding:20px;
+}
+
+.card-image {
+  background-color: blueviolet;
+  margin-bottom: 30px;
+  height: 180px;
+  margin-bottom: 10px;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.first-card {
+  background-image: url(/images/heart-one.jpg);
+}
+
+.second-card {
+  background-image: url(/images/heart-two.jpg);
+}
+
+.third-card {
+  background-image: url(/images/heart-three.jpg);
+}
+/*
+body {
+  height: 100vh;
+  background-color: #cf85b3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+/*
+.container {
+  display:flex;
+  width: 500px;
+  height: 400px;
+  margin: 40px;
+  background: linear-gradient(
+    to right,
+    #41354b 0%,
+    #41354b 50%,
+    rgb(232, 216, 236) 50%,
+    rgb(232, 216, 236) 100%
+  );
+}*/
